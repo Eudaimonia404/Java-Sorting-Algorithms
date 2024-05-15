@@ -7,8 +7,8 @@ public class SortsTest
     @Test
     public void testBubbleSort() 
     {
-        int[] actual = {5, 1, 4, 2, 8};
-        int[] expected = {1, 2, 4, 5, 8};
+        int[] actual = {2, 4, 3, 2, 6, 5, 1};
+        int[] expected = {1, 2, 2, 3, 4, 5, 6}; 
         Sorts.bubbleSort(actual);
         assertArrayEquals(expected, actual);
     }
@@ -16,8 +16,8 @@ public class SortsTest
     @Test
     public void testSelectionSort() 
     {
-        int[] actual = {64, 25, 12, 22, 11};
-        int[] expected = {11, 12, 22, 25, 64};
+        int[] actual = {2, 4, 3, 2, 6, 5, 1};
+        int[] expected = {1, 2, 2, 3, 4, 5, 6};
         Sorts.selectionSort(actual);
         assertArrayEquals(expected, actual);
     }
@@ -25,8 +25,8 @@ public class SortsTest
     @Test
     public void testInsertionSort() 
     {
-        int[] actual = {3, 6, 1, 8, 4, 5};
-        int[] expected = {1, 3, 4, 5, 6, 8};
+        int[] actual = {2, 4, 3, 2, 6, 5, 1};
+        int[] expected = {1, 2, 2, 3, 4, 5, 6};
         Sorts.insertionSort(actual);
         assertArrayEquals(expected, actual);
     }
